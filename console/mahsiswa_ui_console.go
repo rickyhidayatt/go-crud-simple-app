@@ -32,9 +32,10 @@ func PrintMahasiswa(Id int, Nama string, Umur int, Jurusan string) {
 	fmt.Println()
 
 	var exit int
+	fmt.Print("Kembali ke menu utama \nKetik 0")
+	fmt.Println()
 	fmt.Scan(&exit)
 
-	fmt.Print("Kembali ke menu utama \nKetik 0")
 	if exit == 0 {
 		fmt.Println()
 	}
@@ -51,9 +52,10 @@ func PrintInputMahasiswa() {
 	}
 
 	var exit int
+	fmt.Print("Kembali ke menu utama \nKetik 0")
+	fmt.Println()
 	fmt.Scan(&exit)
 
-	fmt.Print("Kembali ke menu utama \nKetik 0")
 	if exit == 0 {
 		fmt.Println()
 	}
