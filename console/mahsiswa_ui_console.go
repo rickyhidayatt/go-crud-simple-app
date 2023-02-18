@@ -10,15 +10,15 @@ import (
 func MenuMahasiswa() {
 
 	fmt.Println()
-	fmt.Println(strings.Repeat("=", 15))
-	fmt.Println("MENU MAHASISWA")
-	fmt.Println(strings.Repeat("=", 15))
+	fmt.Println(strings.Repeat("=", 25))
+	fmt.Println(strings.Repeat(" ", 5), "MENU MAHASISWA")
+	fmt.Println(strings.Repeat("=", 25))
 	fmt.Println("\n1. Tambah Mahasiswa Baru")
 	fmt.Println("2. Lihat Daftar Mahasiswa")
 	fmt.Println("3. Update Daftar Mahasiswa")
 	fmt.Println("4. Hapus Daftar Mahasiswa")
 	fmt.Println("5. Exit")
-	fmt.Println()
+	fmt.Println("Masukan pilihan kamu :")
 
 }
 
@@ -31,14 +31,6 @@ func PrintMahasiswa(Id int, Nama string, Umur int, Jurusan string) {
 	fmt.Println("Jurusan :", Jurusan)
 	fmt.Println()
 
-	var exit int
-	fmt.Scan(&exit)
-
-	fmt.Print("Kembali ke menu utama \nKetik 0")
-	if exit == 0 {
-		fmt.Println()
-	}
-
 }
 
 func PrintInputMahasiswa() {
@@ -50,11 +42,19 @@ func PrintInputMahasiswa() {
 		PrintMahasiswa(v.Id, v.Nama, v.Umur, v.Jurusan)
 	}
 
-	var exit int
+}
+
+func Exit() {
+	var exit string
+	fmt.Println("Ketik Q")
+	fmt.Println("Untuk Kembali ke menu utama :")
+	fmt.Println()
 	fmt.Scan(&exit)
 
-	fmt.Print("Kembali ke menu utama \nKetik 0")
-	if exit == 0 {
-		fmt.Println()
+	if exit == "q" || exit == "Q" {
+	} else {
+		fmt.Println("Kamu salah memasukan inputan")
+		Exit()
+
 	}
 }

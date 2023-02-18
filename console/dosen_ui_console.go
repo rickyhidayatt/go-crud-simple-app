@@ -15,14 +15,6 @@ func PrintDosen(Id string, Nama string, Jurusan string) {
 	fmt.Println("Jurusan :", Jurusan)
 	fmt.Println()
 
-	var exit int
-	fmt.Scan(&exit)
-
-	fmt.Print("Kembali ke menu utama \nKetik 0")
-	if exit == 0 {
-		fmt.Println()
-	}
-
 }
 
 func PrintInputDosen() {
@@ -34,13 +26,6 @@ func PrintInputDosen() {
 		PrintDosen(v.NIDN, v.Nama, v.Jurusan)
 	}
 
-	var exit int
-	fmt.Scan(&exit)
-
-	fmt.Print("Kembali ke menu utama \nKetik 0")
-	if exit == 0 {
-		fmt.Println()
-	}
 }
 
 func MenuDosen() {
