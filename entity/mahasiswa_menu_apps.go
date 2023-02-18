@@ -25,15 +25,19 @@ func MahasiswaMenuApps() {
 			case 1:
 				usecase.InputMaba()
 				console.PrintInputMahasiswa()
+				console.Exit()
 				console.MenuMahasiswa()
 			case 2:
 				usecase.LihatDataMaba()
+				console.Exit()
 				console.MenuMahasiswa()
 			case 3:
 				usecase.UpdateMahasiswa()
+				console.Exit()
 				console.MenuMahasiswa()
 			case 4:
 				usecase.DeleteMahasiswa()
+				console.Exit()
 				console.MenuMahasiswa()
 
 			default:

@@ -2,7 +2,6 @@ package usecase
 
 import (
 	"fmt"
-
 	"live-code/console"
 	"live-code/models"
 	"live-code/repository"
@@ -71,10 +70,10 @@ func UpdateDosen() {
 	dataDosens = DosenRepo.DaftarDosen().DosenS
 
 	for _, v := range dataDosens {
-		fmt.Print("Masukan ID Mahasiswa : ")
+		fmt.Print("Masukan ID Dosen : ")
 		fmt.Scan(&nidn)
-		if nidn == v.NIDN {
-			fmt.Print("Masukan Nama Mahasiswa : ")
+		if nidn == v.NIDN || nidn == "admin" {
+			fmt.Print("Masukan Nama Dosen : ")
 			fmt.Scan(&name)
 			fmt.Print("Masukan Nama Jurusan maksimal 10 Karakter : ")
 			fmt.Scan(&jurusan)

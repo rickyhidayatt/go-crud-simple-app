@@ -25,15 +25,19 @@ func DosenMenuApps() {
 			case 1:
 				usecase.InputDosen()
 				console.PrintInputDosen()
+				console.Exit()
 				console.MenuDosen()
 			case 2:
 				usecase.LihatDataDosen()
+				console.Exit()
 				console.MenuDosen()
 			case 3:
 				usecase.UpdateDosen()
+				console.Exit()
 				console.MenuDosen()
 			case 4:
 				usecase.DeleteDosen()
+				console.Exit()
 				console.MenuDosen()
 
 			default:
